@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <h1>يا مرحبااااااااااااااا</h1> -->
+<script>
+
+
+      //   function result(value) {
+
+      //       console.log("Call Back Funciton")
+      //       document.getElementById("demo").innerHTML = value;
+      //   }
+
+      //   function addNumbers(num1, callBackFunction) {
+      //     x =  num1--
+      //     let sum = num +x ;
+
+      //     callBackFunction(sum);
+      // }
+
+        
+      // console.log(addNumbers(5 ,result));
+
+
+
+
+      function factorialize_1(num) {
+  if (num <= 0) 
+        return 0
+  else if (num == 0) 
+      return -1;
+  else {
+      return (num + factorialize_1(num - 1));
+  }
+  
+}
+console.log(factorialize_1(10));
+
+
+// ################################################################################# 
+
+
+
+      function factorialize(num) {
+  if (num < 0) 
+        return -1;
+  else if (num == 0) 
+      return 1;
+  else {
+      return (num * factorialize(num - 1));
+  }
+  
+}
+console.log(factorialize(5));
+
+// ##########################################################################
+function repeatStr(string, number) {
+    if(number < 0) 
+      return "";
+    if(number === 1) 
+      return string;
+    else 
+      return string + repeatStr(string, number -1);
+  }
+  console.log(repeatStr("abc ", 3));
+  console.log(repeatStr("to ", 1));
+
+
+
+  // ######################################################################## 
+
+function sum2 (n1 , n2){
+  if(n1 <= n2){
+    return n1 + sum2(n1+1,n2);
+  }
+  else{
+    return 0;
+  }
+}
+console.log(sum2(4,5))
+console.log(sum2(3,6))
+
+
+</script>
+</body>
+</html>
